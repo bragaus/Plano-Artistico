@@ -1,0 +1,65 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-sobre {
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    font-size: 50px;
+    width: auto;
+}
+
+.menu-sobre svg {
+    margin-left: -5px;
+    width: 35px;
+}
+
+.menu-sobre:hover {
+    color: #ff0000;
+    background: #ff0000;
+}
+
+.menu-sobre:hover svg {
+    fill: #ff0000;
+}
+
+.menu-logo {
+    position: fixed;
+    top: 20px;
+    left: 20%;
+}
+
+/* Animação de rotação */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        /* Posição inicial */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Completa uma rotação */
+    }
+}
+
+.menu-logo svg {
+    width: 200px;
+
+    -webkit-animation: rotate 8s linear infinite;
+    -moz-animation: rotate 8s linear infinite;
+    animation: rotate 8s linear infinite;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
