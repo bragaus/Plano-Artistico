@@ -118,7 +118,7 @@ ul {
     .menu-mobile {
         font-family: 'Arial', sans-serif;
         font-weight: bold;
-        font-size: 3.7vh;
+        font-size: 3vh;
 
         display: inline;
         position: fixed;
@@ -153,7 +153,7 @@ ul {
     }
 
     .menu-mobile-item-logo {
-        width: 70px;
+        width: 90px;
     }
 
     .menu-mobile-ul {
@@ -161,7 +161,6 @@ ul {
         flex-direction: row;
         margin-top: 10px;
         justify-content: space-between;
-        width: 90vw;
     }
 
     .ul-menu-mobile {
