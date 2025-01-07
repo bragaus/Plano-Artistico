@@ -82,6 +82,12 @@ ul {
     animation: rotate 8s linear infinite;
 }
 
+.logo-mobile {
+    -webkit-animation: rotate 8s linear infinite;
+    -moz-animation: rotate 8s linear infinite;
+    animation: rotate 8s linear infinite;
+}
+
 .pictograma {
     width: 80px;
     margin-left: -140px;
@@ -103,6 +109,10 @@ ul {
     display: none;
 }
 
+.menu-mobile-ul {
+    display: none;
+}
+
 /* Dispositivos pequenos */
 @media (max-width: 670px) {
     .menu-mobile {
@@ -118,6 +128,7 @@ ul {
         height: 100vh;
     }
 
+    
     .menu-mobile ul {
         padding: 0;
         margin: 0;
@@ -135,6 +146,27 @@ ul {
         transform: rotate(180deg);
         transition: transform 0.3s;
         white-space: nowrap;
+    }
+
+    .menu-mobile-item-sobre {
+        width: 40px;
+    }
+
+    .menu-mobile-item-logo {
+        width: 70px;
+    }
+
+    .menu-mobile-ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        justify-content: space-between;
+        width: 90vw;
+    }
+
+    .ul-menu-mobile {
+        display: flex;
+        flex-direction: row;
     }
 
     .menu-desktop {
