@@ -20,7 +20,7 @@ ul {
     margin: 0;
 }
 
-.menu {
+.menu-desktop {
     font-family: 'Arial', sans-serif;
     position: fixed;
     top: 0;
@@ -99,13 +99,56 @@ ul {
     border: 0;
 }
 
+.menu-mobile {
+    display: none;
+}
+
+/* Dispositivos pequenos */
+@media (max-width: 670px) {
+    .menu-mobile {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 3.7vh;
+
+        display: inline;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 120px;
+        height: 100vh;
+    }
+
+    .menu-mobile ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        box-sizing: border-box;
+    }
+    
+    .menu-mobile li {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        transition: transform 0.3s;
+        white-space: nowrap;
+    }
+
+    .menu-desktop {
+        display: none;
+    }  
+}
+
 /* Dispositivos médios (tablets em modo retrato) */
 @media (max-width: 768px) {
     .menu-item-logo {
         top: 50px;
         margin-left: -60px;
     }   
-  }
+}
 
 /* Dispositivos grandes (tablets em modo paisagem ou laptops pequenos) */
 @media (max-width: 992px) {
