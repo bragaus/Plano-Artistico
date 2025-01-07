@@ -1,9 +1,26 @@
+/* Reset básico */
+body {
+    background-color: #fffafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-.menu-sobre {
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
     font-family: 'Arial', sans-serif;
     position: fixed;
     top: 0;
@@ -12,24 +29,36 @@ a {
     width: auto;
 }
 
-.menu-sobre svg {
+.menu-item-sobre svg {
     margin-left: -5px;
     width: 35px;
 }
 
-.menu-sobre:hover {
+.menu-item-sobre:hover {
     color: #ff0000;
     background: #ff0000;
 }
 
-.menu-sobre:hover svg {
+.menu-item-sobre:hover svg {
     fill: #ff0000;
 }
 
-.menu-logo {
+.menu-item-logo {
     position: fixed;
     top: 20px;
-    left: 20%;
+    left: 400px;
+}
+
+.menu-lado-direto {
+    top: 0;
+    position: fixed;
+    right: 0;
+    text-align: right;
+}
+
+.menu-lado-direto span:hover {
+    color: #ff0000;
+    background: #ff0000;    
 }
 
 /* Animação de rotação */
@@ -45,12 +74,18 @@ a {
     }
 }
 
-.menu-logo svg {
+.logo {
     width: 200px;
 
     -webkit-animation: rotate 8s linear infinite;
     -moz-animation: rotate 8s linear infinite;
     animation: rotate 8s linear infinite;
+}
+
+.pictograma {
+    width: 80px;
+    margin-left: -140px;
+    margin-bottom: 75px;
 }
 
 .sr-only {
@@ -62,4 +97,19 @@ a {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+/* Dispositivos médios (tablets em modo retrato) */
+@media (max-width: 768px) {
+    .menu-item-logo {
+        top: 50px;
+        margin-left: -60px;
+    }   
+  }
+
+/* Dispositivos grandes (tablets em modo paisagem ou laptops pequenos) */
+@media (max-width: 992px) {
+    .menu-item-logo {
+        left: 200px;
+    }    
 }
