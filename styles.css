@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+    cursor: url(https://planoart.s3.amazonaws.com/Asset.cur) 43 43, auto !important;
 }
 
 a {
@@ -21,12 +24,13 @@ ul {
 }
 
 .menu-desktop {
-    font-family: 'Arial', sans-serif;
     position: fixed;
     top: 0;
     font-weight: bold;
     font-size: 50px;
     width: auto;
+
+    z-index: 1000;
 }
 
 .menu-item-sobre svg {
@@ -114,6 +118,117 @@ ul {
     display: none;
 }
 
+
+.footer-desktop {
+    position: fixed;
+    bottom: -1.5vw;
+    width: 100%;
+    text-align: center;
+
+    font-size: 0.6vw;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.portfolio-desktop {
+    margin-top: 250px;
+    margin-left: -20px;
+    overflow-x: hidden;
+}
+
+.portfolio-desktop h1 {
+    font-size: 11vw;
+    color: #e6e6e6;
+    white-space: nowrap;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+figcaption {
+    font-weight: bold;
+}
+
+.portfolio-grid {
+    position: absolute;
+    height: 100%;
+}
+
+.portfolio-item-1 {
+    position: relative;
+    width: 20%;
+    left: 10%;
+    top: -3vw;
+}
+
+.portfolio-item-2 {
+    position: relative;
+    width: 22%;
+    left: 75%;
+    top: -10vw;
+}
+
+.portfolio-item-3 {
+    position: relative;
+    width: 30%;
+    left: 40%;
+    top: -50vw;
+}
+
+.portfolio-item-4 {
+    position: relative;
+    width: 20%;
+    left: 30%;
+    top: -50vw;
+}
+
+.portfolio-item-5 {
+    position: relative;
+    width: 25%;
+    left: 2%;
+    top: -45vw;
+}
+
+.portfolio-item-6 {
+    position: relative;
+    width: 15%;
+    left: 20%;
+    top: -55vw;
+}
+
+.portfolio-item-7 {
+    position: relative;
+    width: 35%;
+    left: 60%;
+    top: -75vw;
+}
+
+.portfolio-item-8 {
+    position: relative;
+    width: 25%;
+    left: 10%;
+    top: -75vw;
+}
+
+.portfolio-item-3-3 {
+    position: relative;
+    width: 55%;
+    left: 60%;
+    top: -100vw;
+}
+
+.portfolio-item-9 {
+    position: relative;
+    width: 30%;
+    left: 20%;
+    top: -120vw;
+}
+
 /* Dispositivos pequenos */
 @media (max-width: 670px) {
     .menu-mobile {
@@ -170,6 +285,20 @@ ul {
     }
 
     .menu-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 95vw;
+        text-align: center;
+
+        font-size: 1.5vw;
+    }
+
+    .footer-desktop {
         display: none;
     }
 }
