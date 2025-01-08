@@ -58,7 +58,7 @@ ul {
 
 .menu-lado-direto span:hover {
     color: #ff0000;
-    background: #ff0000;    
+    background: #ff0000;
 }
 
 /* Animação de rotação */
@@ -90,8 +90,9 @@ ul {
 
 .pictograma {
     width: 80px;
-    margin-left: -140px;
-    margin-bottom: 75px;
+    position: absolute;
+    top: 70px;
+    left: 60px;
 }
 
 .sr-only {
@@ -128,7 +129,7 @@ ul {
         height: 100vh;
     }
 
-    
+
     .menu-mobile ul {
         padding: 0;
         margin: 0;
@@ -140,7 +141,7 @@ ul {
         align-items: flex-end;
         box-sizing: border-box;
     }
-    
+
     .menu-mobile li {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -170,7 +171,7 @@ ul {
 
     .menu-desktop {
         display: none;
-    }  
+    }
 }
 
 /* Dispositivos médios (tablets em modo retrato) */
@@ -178,12 +179,12 @@ ul {
     .menu-item-logo {
         top: 50px;
         margin-left: -60px;
-    }   
+    }
 }
 
 /* Dispositivos grandes (tablets em modo paisagem ou laptops pequenos) */
 @media (max-width: 992px) {
     .menu-item-logo {
         left: 200px;
-    }    
+    }
 }
