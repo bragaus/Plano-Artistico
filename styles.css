@@ -123,6 +123,105 @@ ul {
     display: none;
 }
 
+main {
+    margin-top: 250px;
+}
+
+.galeria {
+    overflow-x: hidden;
+}
+
+.capas-de-albuns {
+    font-size: 11vw;
+    color: #e6e6e6;
+    white-space: nowrap;
+    margin-left: -25px;    
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 200vw;
+    overflow: hidden;
+}
+
+.container figure {
+    position: absolute;
+}
+
+.container-capa-de-albuns {
+    margin-top: -4vw;
+}
+
+.item-1 {
+    width: 20%;
+    left: 10%;
+}
+
+.item-2 {
+    width: 30%;
+    left: 65%;
+    top: 5vw;
+}
+
+.item-3 {
+    width: 29%;
+    left: 32%;
+    top: 20vw;
+}
+
+.item-4 {
+    width: 33%;
+    left: 2%;
+    top: 50vw;
+}
+
+.item-5 {
+    width: 31%;
+    left: 50%;
+    top: 65vw;
+}
+
+.item-6 {
+    width: 27%;
+    left: 70%;
+    top: 85vw;
+    transform: rotate(10deg);
+}
+
+.item-7 {
+    width: 32%;
+    left: 10%;
+    top: 105vw;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid img.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid img.medium {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.grid img.small {
+    grid-column: span 1;
+    grid-row: span 1;
+} */
 
 .footer-desktop {
     position: fixed;
@@ -160,7 +259,7 @@ figcaption {
 }
 
 .portfolio-grid {
-    position: absolute;
+    position: relative;
     height: 100%;
 }
 
@@ -195,7 +294,7 @@ figcaption {
 .portfolio-item-5 {
     position: relative;
     width: 25%;
-    left: 2%;
+    left: 3%;
     top: -45vw;
 }
 
@@ -223,24 +322,24 @@ figcaption {
 .portfolio-item-3-3 {
     position: relative;
     width: 25%;
-    left: 60%;
+    left: 45%;
     top: -90vw;
 }
 
 .portfolio-item-9 {
     position: relative;
-    width: 50%;
+    width: 30%;
     left: 1%;
-    top: -110vw;
+    top: -160vw;
 }
 
 .portfolio-item-10 {
     position: relative;
-    width: 40%;
-    left: 60%;
+    width: 35%;
+    left: 65%;
     top: -100vw;
     z-index: 100;
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
 }
 
 .portfolio-item-11 {
@@ -248,7 +347,28 @@ figcaption {
     width: 25%;
     left: 40%;
     top: -120vw;
-    transform: rotate(20deg);
+    transform: rotate(5deg);
+}
+
+.portfolio-item-12 {
+    position: relative;
+    width: 30%;
+    left: 10%;
+    top: -145vw;
+}
+
+.portfolio-item-13 {
+    position: relative;
+    width: 25%;
+    left: 60%;
+    top: -165vw;
+}
+
+.portfolio-item-14 {
+    position: relative;
+    width: 25%;
+    left: 60%;
+    top: -165vw;    
 }
 
 /* Dispositivos pequenos */
