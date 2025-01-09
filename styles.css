@@ -1,6 +1,11 @@
 /* Reset básico */
+html {
+    cursor: url(https://planoart.s3.amazonaws.com/Asset.cur) 43 43, auto !important;
+}
+
 body {
     background-color: #fffafa;
+    overflow-x: hidden;
 }
 
 * {
@@ -148,7 +153,7 @@ img {
     width: 100%;
     height: auto;
     display: block;
-  }
+}
 
 figcaption {
     font-weight: bold;
@@ -217,16 +222,33 @@ figcaption {
 
 .portfolio-item-3-3 {
     position: relative;
-    width: 55%;
+    width: 25%;
     left: 60%;
-    top: -100vw;
+    top: -90vw;
 }
 
 .portfolio-item-9 {
     position: relative;
-    width: 30%;
-    left: 20%;
+    width: 50%;
+    left: 1%;
+    top: -110vw;
+}
+
+.portfolio-item-10 {
+    position: relative;
+    width: 40%;
+    left: 60%;
+    top: -100vw;
+    z-index: 100;
+    transform: rotate(-20deg);
+}
+
+.portfolio-item-11 {
+    position: relative;
+    width: 25%;
+    left: 40%;
     top: -120vw;
+    transform: rotate(20deg);
 }
 
 /* Dispositivos pequenos */
