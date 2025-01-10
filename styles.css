@@ -256,6 +256,20 @@ main {
     transform: rotate(1.8deg);
 }
 
+.item-smile {
+    width: 15%;
+    left: 10%;
+    top: 260vw;
+    transform: rotate(-1.5deg);
+}
+
+.item-15 {
+    width: 35%;
+    left: 55%;
+    top: 300vw;
+    transform: rotate(1.2deg);
+}
+
 /* .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
