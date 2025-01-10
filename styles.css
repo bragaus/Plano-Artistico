@@ -145,10 +145,16 @@ main {
     margin-left: -17px;    
 }
 
+.acomerciais {
+    font-size: 13.5vw;
+    color: #e6e6e6;
+    white-space: nowrap;
+    margin-left: -15px;
+}
+
 .container {
     position: relative;
     width: 100%;
-    height: 350vw;
     overflow: hidden;
 }
 
@@ -158,6 +164,15 @@ main {
 
 .container-capa-de-albuns {
     margin-top: -4vw;
+    height: 350vw;
+}
+
+.container-colagens {
+    height: 85vw;
+}
+
+.container-comerciais {
+    height: 200vw;
 }
 
 .item-1 {
@@ -297,6 +312,46 @@ main {
     top: 50vw;
     transform: rotate(-1.7deg);
 }
+
+.item-26 {
+    width: 50%;
+    left: 45%;
+}
+
+.item-19 {
+    width: 35%;
+    left: 5%;
+    top: 10vw;
+    transform: rotate(1.7deg);
+}
+
+.item-27 {
+    width: 35%;
+    left: 1%;
+    top: 40vw;
+    transform: rotate(-1.2deg);
+}
+
+.item-29 {
+    width: 35%;
+    left: 60%;
+    top: 70vw;
+    transform: rotate(1.5deg);
+}
+
+.item-28 {
+    width: 45%;
+    left: 5%;
+    top: 90vw;
+}
+
+.item-23 {
+    width: 35%;
+    left: 50%;
+    top: 120vw;
+    transform: rotate(-1.1deg);
+}
+
 /* .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
