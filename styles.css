@@ -138,10 +138,17 @@ main {
     margin-left: -25px;
 }
 
+.colagens {
+    font-size: 18vw;
+    color: #e6e6e6;
+    white-space: nowrap;
+    margin-left: -17px;    
+}
+
 .container {
     position: relative;
     width: 100%;
-    height: 400vw;
+    height: 350vw;
     overflow: hidden;
 }
 
@@ -259,7 +266,7 @@ main {
 .item-smile {
     width: 15%;
     left: 10%;
-    top: 260vw;
+    top: 257vw;
     transform: rotate(-1.5deg);
 }
 
@@ -270,6 +277,26 @@ main {
     transform: rotate(1.2deg);
 }
 
+.item-18 {
+    width: 37%;
+    left: 20%;
+    top: 1vw;
+    transform: rotate(-1.3deg);
+}
+
+.item-16 {
+    width: 40%;
+    left: 60%;
+    top: 20vw;
+    transform: rotate(1.2deg);
+}
+
+.item-17 {
+    width: 32%;
+    left: 5%;
+    top: 50vw;
+    transform: rotate(-1.7deg);
+}
 /* .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
