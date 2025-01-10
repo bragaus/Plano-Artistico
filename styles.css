@@ -1,4 +1,3 @@
-/* Reset básico */
 html {
     cursor: url(https://planoart.s3.amazonaws.com/Asset.cur) 43 43, auto !important;
 }
@@ -26,6 +25,17 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 1.2vw;
 }
 
 .menu-desktop {
@@ -123,7 +133,7 @@ ul {
     display: none;
 }
 
-main {
+.galeria-1 {
     margin-top: 250px;
 }
 
@@ -135,21 +145,21 @@ main {
     font-size: 11vw;
     color: #e6e6e6;
     white-space: nowrap;
-    margin-left: -25px;
+    margin-left: -2vw;
 }
 
 .colagens {
     font-size: 18vw;
     color: #e6e6e6;
     white-space: nowrap;
-    margin-left: -17px;    
+    margin-left: -2vw;    
 }
 
 .acomerciais {
     font-size: 13.5vw;
     color: #e6e6e6;
     white-space: nowrap;
-    margin-left: -15px;
+    margin-left: -2vw;
 }
 
 .container {
@@ -172,7 +182,7 @@ main {
 }
 
 .container-comerciais {
-    height: 200vw;
+    height: 185vw;
 }
 
 .item-1 {
@@ -352,33 +362,23 @@ main {
     transform: rotate(-1.1deg);
 }
 
-/* .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+.item-3-3-3 {
+    width: 21%;
+    left: 42%;
+    top: 60vw;
 }
 
-.grid img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.item-24 {
+    width: 35%;
+    left: 1%;
+    top: 130vw;
+    transform: rotate(1.3deg);
 }
 
-.grid img.large {
-    grid-column: span 2;
-    grid-row: span 2;
+.planoartistico {
+    font-size: 11.2vw;
+    white-space: nowrap;
 }
-
-.grid img.medium {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.grid img.small {
-    grid-column: span 1;
-    grid-row: span 1;
-} */
 
 .footer-desktop {
     position: fixed;
@@ -393,143 +393,12 @@ main {
     display: none;
 }
 
-.portfolio-desktop {
-    margin-top: 250px;
-    margin-left: -20px;
-    overflow-x: hidden;
-}
-
-.portfolio-desktop h1 {
-    font-size: 11vw;
-    color: #e6e6e6;
-    white-space: nowrap;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-figcaption {
-    font-weight: bold;
-}
-
-.portfolio-grid {
-    position: relative;
-    height: 100%;
-}
-
-.portfolio-item-1 {
-    position: relative;
-    width: 20%;
-    left: 10%;
-    top: -3vw;
-}
-
-.portfolio-item-2 {
-    position: relative;
-    width: 22%;
-    left: 75%;
-    top: -10vw;
-}
-
-.portfolio-item-3 {
-    position: relative;
-    width: 30%;
-    left: 40%;
-    top: -50vw;
-}
-
-.portfolio-item-4 {
-    position: relative;
-    width: 20%;
-    left: 30%;
-    top: -50vw;
-}
-
-.portfolio-item-5 {
-    position: relative;
-    width: 25%;
-    left: 3%;
-    top: -45vw;
-}
-
-.portfolio-item-6 {
-    position: relative;
-    width: 15%;
-    left: 20%;
-    top: -55vw;
-}
-
-.portfolio-item-7 {
-    position: relative;
-    width: 35%;
-    left: 60%;
-    top: -75vw;
-}
-
-.portfolio-item-8 {
-    position: relative;
-    width: 25%;
-    left: 10%;
-    top: -75vw;
-}
-
-.portfolio-item-3-3 {
-    position: relative;
-    width: 25%;
-    left: 45%;
-    top: -90vw;
-}
-
-.portfolio-item-9 {
-    position: relative;
-    width: 30%;
-    left: 1%;
-    top: -160vw;
-}
-
-.portfolio-item-10 {
-    position: relative;
-    width: 35%;
-    left: 65%;
-    top: -100vw;
-    z-index: 100;
-    transform: rotate(-10deg);
-}
-
-.portfolio-item-11 {
-    position: relative;
-    width: 25%;
-    left: 40%;
-    top: -120vw;
-    transform: rotate(5deg);
-}
-
-.portfolio-item-12 {
-    position: relative;
-    width: 30%;
-    left: 10%;
-    top: -145vw;
-}
-
-.portfolio-item-13 {
-    position: relative;
-    width: 25%;
-    left: 60%;
-    top: -165vw;
-}
-
-.portfolio-item-14 {
-    position: relative;
-    width: 25%;
-    left: 60%;
-    top: -165vw;
-}
-
 /* Dispositivos pequenos */
 @media (max-width: 670px) {
+    .galeria-1 {
+        margin-top: 50px;
+    }
+
     .menu-mobile {
         font-family: 'Arial', sans-serif;
         font-weight: bold;
@@ -541,8 +410,8 @@ figcaption {
         top: 0;
         width: 120px;
         height: 100vh;
+        z-index: 1000;
     }
-
 
     .menu-mobile ul {
         padding: 0;
@@ -554,6 +423,8 @@ figcaption {
         justify-content: space-between;
         align-items: flex-end;
         box-sizing: border-box;
+        
+        z-index: 1000;
     }
 
     .menu-mobile li {
@@ -571,11 +442,18 @@ figcaption {
         width: 90px;
     }
 
+    .seta {
+        transform: rotate(130deg);
+    }
+
     .menu-mobile-ul {
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
         justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
     }
 
     .ul-menu-mobile {
