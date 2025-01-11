@@ -152,14 +152,14 @@ figcaption {
     display: none;
 }
 
-.colagens {
+.colagens-desktop {
     font-size: 18vw;
     color: #e6e6e6;
     white-space: nowrap;
     margin-left: -2vw;
 }
 
-.acomerciais {
+.acomerciais-desktop {
     font-size: 13.5vw;
     color: #e6e6e6;
     white-space: nowrap;
@@ -413,6 +413,10 @@ p {
     transform: rotate(1.3deg);
 }
 
+.colagens-mobile {
+    display: none;
+}
+
 /* Dispositivos pequenos */
 @media (max-width: 670px) {
     figcaption {
@@ -531,7 +535,64 @@ p {
 
     .container-capa-de-albuns {
         margin-top: -15vw;
-        height: 414vw;
+        height: 410vw;
+    }
+
+    .container-colagens {
+        height: 237vw;
+    }
+
+    .colagens-desktop {
+        display: none;
+    }
+
+    .acomerciais-desktop {
+        display: none;
+    }
+
+    .acomerciais-mobile {
+        display: contents;
+        color: #e6e6e6;
+        white-space: nowrap;
+    }
+
+    .container-comerciais {
+        margin-top: -10vw;
+        height: 350vw;
+    }
+
+    .artes {
+        margin-top: 4vw;
+        font-size: 30vw;
+        transform: rotate(-4deg);
+        margin-left: -7vw;
+    }
+
+    .comerciais {
+        margin-top: -10vw;
+        font-size: 16vw;
+        transform: rotate(-4deg);
+        margin-left: -3vw;
+    }
+
+    .colagens-mobile {
+        display: contents;
+        color: #e6e6e6;
+        white-space: nowrap;
+    }
+
+    .cola {
+        margin-top: 4vw;
+        font-size: 35vw;
+        transform: rotate(6deg);
+        margin-left: -7vw;
+    }
+
+    .gens {
+        margin-top: -13vw;
+        font-size: 36vw;
+        transform: rotate(6deg);
+        margin-left: -3vw;
     }
 
     /* Posição e tamanho das artes */
@@ -641,76 +702,75 @@ p {
     }
 
     .item-18 {
-        width: 37%;
+        width: 69%;
         left: 20%;
-        top: 1vw;
         transform: rotate(-1.3deg);
     }
 
     .item-16 {
-        width: 40%;
-        left: 60%;
-        top: 20vw;
+        width: 71%;
+        left: 5%;
+        top: 84vw;
         transform: rotate(1.2deg);
     }
 
     .item-17 {
-        width: 32%;
-        left: 5%;
-        top: 50vw;
+        width: 72%;
+        left: 15%;
+        top: 160vw;
         transform: rotate(-1.7deg);
     }
 
     .item-26 {
-        width: 50%;
-        left: 48%;
+        width: 85%;
+        left: 2%;
+        top: 8vw;
+        transform: rotate(-4deg);
     }
 
     .item-19 {
-        width: 35%;
-        left: 5%;
-        top: 10vw;
-        transform: rotate(1.7deg);
+        width: 85%;
+        left: 10%;
+        top: 103vw;
+        transform: rotate(0.2deg);
     }
 
     .item-27 {
-        width: 35%;
+        width: 55%;
         left: 1%;
-        top: 40vw;
+        top: 150vw;
         transform: rotate(-1.2deg);
     }
 
     .item-29 {
-        width: 35%;
-        left: 68%;
-        top: 70vw;
+        width: 40%;
+        left: 58%;
+        top: 160vw;
         transform: rotate(1.5deg);
     }
 
     .item-28 {
-        width: 45%;
+        width: 90%;
         left: 5%;
-        top: 90vw;
+        top: 210vw;
     }
 
     .item-23 {
-        width: 35%;
-        left: 50%;
-        top: 120vw;
+        width: 50%;
+        left: -1%;
+        top: 250vw;
         transform: rotate(-1.1deg);
     }
 
     .item-3-3-3 {
-        width: 21%;
-        left: 42%;
-        top: 60vw;
+        display: none;
     }
 
     .item-24 {
-        width: 35%;
-        left: 1%;
-        top: 130vw;
-        transform: rotate(1.3deg);
+        width: 40%;
+        left: 52%;
+        top: 260vw;
+        transform: rotate(-1.3deg);
     }
 }
 
