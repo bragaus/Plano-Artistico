@@ -24,7 +24,7 @@
         <nav aria-label="Menu principal do desktop" class="menu-desktop">
             <ul>
                 <li class="menu-item-sobre">
-                    <a href="">
+                    <a href="#secao4">
                         <span>SOBRE</span>
 
                         <!-- Icone de seta -->
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="menu-item-logo">
-                    <a href="">
+                    <a href="#secao1">
                         <span class="sr-only">Plano Artístico</span>
 
                         <!-- Logo do Plano Artístico -->
@@ -110,16 +110,16 @@
                 <li>
                     <ul class="menu-lado-direto">
                         <li>
-                            <a href=""><span>CAPAS DE ÁLBUNS</span></a>
+                            <a href="#secao1"><span>CAPAS DE ÁLBUNS</span></a>
                         </li>
                         <li>
-                            <a href=""><span>COLAGENS</span></a>
+                            <a href="#secao2"><span>COLAGENS</span></a>
                         </li>
                         <li>
-                            <a href=""><span>A. COMERCIAIS</span></a>
+                            <a href="#secao3"><span>A. COMERCIAIS</span></a>
                         </li>
                         <li>
-                            <a href=""><span>CONTATO</span></a>
+                            <a href="#secao4"><span>CONTATO</span></a>
                         </li>
                     </ul>
                 </li>
@@ -128,7 +128,7 @@
         <nav aria-label="Menu principal do mobile">
             <ul class="menu-mobile-ul">
                 <li class="menu-mobile-item-sobre">
-                    <a href="">
+                    <a href="#secao4">
                         <!-- Icone de seta -->
                         <svg viewBox="0 0 115.41 115.79" aria-hidden="true" focusable="false" class="seta">
                             <title>Seta para a página Sobre</title>
@@ -138,7 +138,7 @@
                     </a>
                 </li>
                 <li class="menu-mobile-item-logo">
-                    <a href="">
+                    <a href="#secao1">
                         <span class="sr-only">Plano Artístico</span>
 
                         <!-- Pictograma do Plano Artístico -->
@@ -157,16 +157,16 @@
             <div class="menu-mobile">
                 <ul>
                     <li>
-                        <a href=""><span>CAPAS DE ÁLBUNS</span></a>
+                        <a href="#secao1"><span>CAPAS DE ÁLBUNS</span></a>
                     </li>
                     <li>
-                        <a href=""><span>COLAGENS</span></a>
+                        <a href="#secao2"><span>COLAGENS</span></a>
                     </li>
                     <li>
-                        <a href=""><span>A. COMERCIAIS</span></a>
+                        <a href="#secao3"><span>A. COMERCIAIS</span></a>
                     </li>
                     <li>
-                        <a href=""><span>CONTATO</span></a>
+                        <a href="#secao4"><span>CONTATO</span></a>
                     </li>
                 </ul>
             </div>
@@ -174,7 +174,7 @@
     </header>
 
     <main>
-        <section class="galeria galeria-1">
+        <section class="galeria galeria-1" id="secao1">
             <h2 class="capas-de-albuns-desktop">CAPAS DE ÁLBUNS</h2>
             <div class="capas-de-albuns-mobile">
                 <h2 class="capas-de">CAPAS DE</h2>
@@ -261,14 +261,14 @@
                     <img src="./artes/smile.png" alt="SMILE" loading="lazy" />
                 </figure>
                 <figure class="item-15">
-                    <a href="https://open.spotify.com/intl-pt/album/5f9ixIuXsQItr9lfvF1amW" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=BDBgJqjyDKw" target="_blank">
                         <img src="./artes/15.png" alt="NOVA SINAPSE" loading="lazy" />
                         <figcaption>NOVA SINAPSE</figcaption>
                     </a>
                 </figure>
             </div>
         </section>
-        <section class="galeria">
+        <section class="galeria" id="secao2">
             <h2 class="colagens-desktop">COLAGENS</h2>
             <div class="colagens-mobile">
                 <h2 class="cola">COLA</h2>
@@ -289,7 +289,7 @@
                 </figure>
             </div>
         </section>
-        <section class="galeria">
+        <section class="galeria" id="secao3">
             <h2 class="acomerciais-desktop">A. COMERCIAIS</h2>
             <div class="acomerciais-mobile">
                 <h2 class="artes">ARTES</h2>
@@ -331,11 +331,15 @@
                 </figure>
             </div>
         </section>
-        <section class="sobre">
-            <h2 class="planoartistico">PLANO ARTÍSTICO</h2>
+        <section class="sobre" id="secao4">
+            <h2 class="planoartistico-desktop">PLANO ARTÍSTICO</h2>
+            <div class="planoartistico-mobile">
+                <h2 class="plano">PLANO</h2>
+                <h2 class="artistico">ARTÍSTICO</h2>
+            </div>
 
             <p>
-                Olá, eu sou o <b>BRAGA US</b>.
+                Olá, eu sou o Matheus Braga (<b>BRAGA US</b>).
             </p>
 
             <p>
@@ -347,9 +351,11 @@
                 em 2017 no CEP uma escola técnica de Itajubá, MG.
             </p>
 
-            <Estrela />
+            <p>
+                Contato: bragaus@outlook.com / 21 96909-9714
+            </p>
 
-            <p className="criadores">
+            <p>
                 CODED BY <b>ME</b> <del>no horário de almoço</del>
             </p>
 

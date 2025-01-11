@@ -5,6 +5,7 @@ html {
 body {
     background-color: #fffafa;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -189,7 +190,7 @@ figcaption {
     height: 185vw;
 }
 
-.planoartistico {
+.planoartistico-desktop {
     font-size: 11.2vw;
     white-space: nowrap;
     margin-left: -1vw;
@@ -219,7 +220,7 @@ p {
 }
 
 .sobre {
-    margin-bottom: 60px;
+    margin-bottom: 5vw;
 }
 
 /* Posição e tamanho das artes */
@@ -417,8 +418,15 @@ p {
     display: none;
 }
 
-/* Dispositivos pequenos */
-@media (max-width: 670px) {
+.planoartistico-mobile {
+    display: none;
+}
+
+.acomerciais-mobile {
+    display: none;
+}
+
+@media (max-width: 845px) {
     figcaption {
         font-size: 2.4vw;
     }
@@ -558,7 +566,7 @@ p {
 
     .container-comerciais {
         margin-top: -10vw;
-        height: 350vw;
+        height: 330vw;
     }
 
     .artes {
@@ -772,19 +780,42 @@ p {
         top: 260vw;
         transform: rotate(-1.3deg);
     }
-}
 
-/* Dispositivos médios (tablets em modo retrato) */
-@media (max-width: 768px) {
-    .menu-item-logo {
-        top: 50px;
-        margin-left: -60px;
+
+
+    .planoartistico-desktop {
+        display: none;
     }
+
+    .planoartistico-mobile {
+        display: contents;
+        white-space: nowrap;
+    }
+
+    .plano {
+        margin-top: 4vw;
+        font-size: 30vw;
+        transform: rotate(-4deg);
+        margin-left: -3vw;
+    }
+
+    .artistico {
+        margin-top: -6vw;
+        font-size: 19vw;
+        transform: rotate(-4deg);
+        margin-left: -3vw;
+    }
+
+    .sobre {
+        width: 90%;
+        text-align: justify;
+        margin-bottom: 12vw;
+    }
+
 }
 
-/* Dispositivos grandes (tablets em modo paisagem ou laptops pequenos) */
-@media (max-width: 992px) {
+@media (max-width: 1360px) {
     .menu-item-logo {
-        left: 200px;
+        left: 22vw;
     }
 }
