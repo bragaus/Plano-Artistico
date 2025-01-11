@@ -141,11 +141,15 @@ figcaption {
     overflow-x: hidden;
 }
 
-.capas-de-albuns {
+.capas-de-albuns-desktop {
     font-size: 11vw;
     color: #e6e6e6;
     white-space: nowrap;
     margin-left: -2vw;
+}
+
+.capas-de-albuns-mobile {
+    display: none;
 }
 
 .colagens {
@@ -185,6 +189,40 @@ figcaption {
     height: 185vw;
 }
 
+.planoartistico {
+    font-size: 11.2vw;
+    white-space: nowrap;
+    margin-left: -1vw;
+}
+
+.footer-desktop {
+    position: fixed;
+    bottom: -1.5vw;
+    width: 100%;
+    text-align: center;
+
+    font-size: 0.6vw;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.seta {
+    transform: rotate(130deg);
+}
+
+p {
+    font-size: 5rem;
+    padding-top: 2rem;
+    margin: 0px 3px;
+}
+
+.sobre {
+    margin-bottom: 60px;
+}
+
+/* Posição e tamanho das artes */
 .item-1 {
     width: 20%;
     left: 10%;
@@ -375,41 +413,36 @@ figcaption {
     transform: rotate(1.3deg);
 }
 
-.planoartistico {
-    font-size: 11.2vw;
-    white-space: nowrap;
-    margin-left: -1vw;
-}
-
-.footer-desktop {
-    position: fixed;
-    bottom: -1.5vw;
-    width: 100%;
-    text-align: center;
-
-    font-size: 0.6vw;
-}
-
-.footer-mobile {
-    display: none;
-}
-
-.seta {
-    transform: rotate(130deg);
-}
-
-p {
-    font-size: 5rem;
-    padding-top: 2rem;
-    margin: 0px 3px;
-}
-
-.sobre {
-    margin-bottom: 60px;
-}
-
 /* Dispositivos pequenos */
 @media (max-width: 670px) {
+    figcaption {
+        font-size: 2.4vw;
+    }
+
+    .capas-de-albuns-desktop {
+        display: none;
+    }
+
+    .capas-de-albuns-mobile {
+        display: contents;
+        color: #e6e6e6;
+        white-space: nowrap;
+    }
+
+    .capas-de {
+        margin-top: 4vw;
+        font-size: 23vw;
+        transform: rotate(-10deg);
+        margin-left: -7vw;
+    }
+
+    .albuns {
+        margin-top: -8vw;
+        font-size: 24vw;
+        transform: rotate(-10deg);
+        margin-left: -3vw;
+    }
+
     p {
         font-size: 2rem;
         padding-top: 2rem;
@@ -423,7 +456,7 @@ p {
     .menu-mobile {
         font-family: 'Arial', sans-serif;
         font-weight: bold;
-        font-size: 3vh;
+        font-size: 3.3vh;
         color: #ff0000;
         display: inline;
         position: fixed;
@@ -494,6 +527,190 @@ p {
 
     .footer-desktop {
         display: none;
+    }
+
+    .container-capa-de-albuns {
+        margin-top: -15vw;
+        height: 414vw;
+    }
+
+    /* Posição e tamanho das artes */
+    .item-1 {
+        width: 46%;
+        left: 1%;
+        transform: rotate(-1deg);
+        top: 13vw;
+    }
+
+    .item-2 {
+        width: 47%;
+        left: 50%;
+        top: 7vw;
+        transform: rotate(2deg);
+    }
+
+    .item-3 {
+        display: none;
+    }
+
+    .item-4 {
+        width: 47%;
+        left: 2%;
+        top: 66vw;
+        transform: rotate(-1.3deg);
+    }
+
+    .item-5 {
+        width: 43%;
+        left: 52%;
+        top: 70vw;
+        transform: rotate(-2.3deg);
+    }
+
+    .item-6 {
+        display: none;
+    }
+
+    .item-7 {
+        width: 42%;
+        left: 6%;
+        top: 120vw;
+        transform: rotate(1.7deg);
+    }
+
+    .item-8 {
+        width: 48%;
+        left: 50%;
+        top: 125vw;
+        transform: rotate(1.1deg);
+    }
+
+    .item-3-3 {
+        display: none
+    }
+
+    .item-10 {
+        width: 45%;
+        left: 1%;
+        top: 168vw;
+        transform: rotate(-8deg);
+    }
+
+    .item-11 {
+        width: 42%;
+        left: 52%;
+        top: 180vw;
+        transform: rotate(2deg);
+    }
+
+    .item-9 {
+        width: 49%;
+        left: 1%;
+        top: 225vw;
+        transform: rotate(-1.5deg);
+    }
+
+    .item-12 {
+        width: 40%;
+        left: 52%;
+        top: 235vw;
+    }
+
+    .item-13 {
+        width: 35%;
+        left: 52%;
+        top: 280vw;
+    }
+
+    .item-14 {
+        width: 48%;
+        left: 2%;
+        top: 285vw;
+        transform: rotate(1.8deg);
+    }
+
+    .item-smile {
+        display: none;
+    }
+
+    .item-15 {
+        width: 65%;
+        left: 15%;
+        top: 340vw;
+        transform: rotate(1.2deg);
+    }
+
+    .item-18 {
+        width: 37%;
+        left: 20%;
+        top: 1vw;
+        transform: rotate(-1.3deg);
+    }
+
+    .item-16 {
+        width: 40%;
+        left: 60%;
+        top: 20vw;
+        transform: rotate(1.2deg);
+    }
+
+    .item-17 {
+        width: 32%;
+        left: 5%;
+        top: 50vw;
+        transform: rotate(-1.7deg);
+    }
+
+    .item-26 {
+        width: 50%;
+        left: 48%;
+    }
+
+    .item-19 {
+        width: 35%;
+        left: 5%;
+        top: 10vw;
+        transform: rotate(1.7deg);
+    }
+
+    .item-27 {
+        width: 35%;
+        left: 1%;
+        top: 40vw;
+        transform: rotate(-1.2deg);
+    }
+
+    .item-29 {
+        width: 35%;
+        left: 68%;
+        top: 70vw;
+        transform: rotate(1.5deg);
+    }
+
+    .item-28 {
+        width: 45%;
+        left: 5%;
+        top: 90vw;
+    }
+
+    .item-23 {
+        width: 35%;
+        left: 50%;
+        top: 120vw;
+        transform: rotate(-1.1deg);
+    }
+
+    .item-3-3-3 {
+        width: 21%;
+        left: 42%;
+        top: 60vw;
+    }
+
+    .item-24 {
+        width: 35%;
+        left: 1%;
+        top: 130vw;
+        transform: rotate(1.3deg);
     }
 }
 
