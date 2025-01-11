@@ -152,7 +152,7 @@ figcaption {
     font-size: 18vw;
     color: #e6e6e6;
     white-space: nowrap;
-    margin-left: -2vw;    
+    margin-left: -2vw;
 }
 
 .acomerciais {
@@ -378,6 +378,7 @@ figcaption {
 .planoartistico {
     font-size: 11.2vw;
     white-space: nowrap;
+    margin-left: -1vw;
 }
 
 .footer-desktop {
@@ -393,8 +394,28 @@ figcaption {
     display: none;
 }
 
+.seta {
+    transform: rotate(130deg);
+}
+
+p {
+    font-size: 5rem;
+    padding-top: 2rem;
+    margin: 0px 3px;
+}
+
+.sobre {
+    margin-bottom: 60px;
+}
+
 /* Dispositivos pequenos */
 @media (max-width: 670px) {
+    p {
+        font-size: 2rem;
+        padding-top: 2rem;
+        margin: 0px 3px;
+    }
+
     .galeria-1 {
         margin-top: 50px;
     }
@@ -403,7 +424,7 @@ figcaption {
         font-family: 'Arial', sans-serif;
         font-weight: bold;
         font-size: 3vh;
-
+        color: #ff0000;
         display: inline;
         position: fixed;
         right: 0;
@@ -423,7 +444,7 @@ figcaption {
         justify-content: space-between;
         align-items: flex-end;
         box-sizing: border-box;
-        
+
         z-index: 1000;
     }
 
@@ -440,10 +461,6 @@ figcaption {
 
     .menu-mobile-item-logo {
         width: 90px;
-    }
-
-    .seta {
-        transform: rotate(130deg);
     }
 
     .menu-mobile-ul {
