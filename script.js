@@ -7,3 +7,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img');
+    let loadedImages = 0;
+    console.log(images.length)
+
+    function imageLoaded() {
+        loadedImages++;
+        console.log(loadedImages)
+
+        if (loadedImages === images.length) {
+            document.getElementById('loading-screen').style.display = 'none';
+        }
+    }
+
+    images.forEach(img => {
+        if (img.complete) {
+            imageLoaded();
+        } else {
+            img.addEventListener('load', imageLoaded);
+        }
+        img.addEventListener('error', imageLoaded); // Handle error cases
+    });
+
+    setTimeout(() => {
+        if (loadedImages <= images.length) {
+            document.getElementById('loading-screen').style.display = 'none';
+        }
+    }, 5000);
+});
