@@ -1,3 +1,7 @@
+if (window.location.protocol === 'http:') {
+    window.location.href = 'https://' + window.location.host + window.location.pathname + window.location.search;
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
