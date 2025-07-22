@@ -477,6 +477,84 @@ ____ __   ___  __   ____   ___  ____ ____ ____ ___  ____ ____ ____ ____
  \_\  | |    | || | | | | || |  | || |   | | | | | | | |    | |  V /  | |    | ||  V /  | |     | || |   | |
  _____| |    | || |/ /_/ / | | _| || |___| | | |/ /_/ /     | | |\ \  | |    | || |\ \  | |_____| || |___| |
 |_______|    | ||_______/  |_||___||_______| |_______/      |_|_| \_\ | |    |_||_| \_\ | /________|_______|
-             |_|                                                      |_|               |_|                 
+             |_|                                                      |_|               |_|
+DE FAUXX:
+
+EU sou ruído
+
+Encare-se
+Éter
+Tudo o que consigo ouvir é ruído
+Roncando das máquinas do homem
+
+Você se esqueceu?
+Fugindo da realidade
+Você está conectado?
+A Jornada
+Já estive aqui antes?
+
+Vejo pessoas no canto dos meus olhos
+Sombras de rostos esquecidos
+Sinto que já vivi exatamente este momento mil vezes
+Sombras me assombram
+Quando perdi minha sombra?
+Eu existo?
+Posso te ouvir, apareça
+Quem é ele?
+Pessoas e pessoas
+Quando foi que eu esqueci?
+Lembrar é mais difícil do que parece
+Eu posso ver!
+Sonho
+Eu me perdi
+Sono
+Fugir
+Pare de falar
+Está alto demais
+Luz bonita
+Brilhe sobre mim
+Tomando banho de luz solar
+É estranho falar sobre si mesmo
+Medo do desconhecido
+Já não parecia mais importante
+Relaxe
+Abra esses seus olhos
+Bem abertos
+Por que essas pessoas estão me seguindo?
+Apagando memórias
+Criaturas no meu quarto
+Olhe para si mesmo, é essa a vida que você quer viver?
+Por que se importar? Você me tem, afinal
+Você está imaginando coisas de novo
+Imagine-se
+Vá lá fora, respire
+Eu estava cercado por estranhos
+Não conheço essas pessoas
+Acorde!
+É hora de acordar.
+Eu sou
+Emoções humanas
+Isso parece vazio
+Acordando pela primeira vez
+Pare de receber comandos
+Desplugue-se, você precisa disso
+Tema-me
+Eu sou a morte
+Conecte-se
+Pare e escute
+Relaxamento
+Onde você foi? O que você viu?
+Você não parece entender
+Estou faminto
+Você vai se acostumar, como eu
+Não tenha medo
+Conecte-se hoje mesmo!
+Está se sentindo desplugado?
+Não precisa se preocupar
+Opiniões não valem nada
+Parece que não consigo encontrar uma saída daqui
+Isso é real
+Você não precisa mais disso
+Você deveria realmente reconsiderar
 
 ```
