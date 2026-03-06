@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { JwtModule, JwtModuleOptions } from '@nestjs/jwt';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { PassportModule } from '@nestjs/passport';
+import { type SignOptions } from 'jsonwebtoken';
 
 import { AuthController } from '../auth/auth.controller';
 import { AuthService } from '../auth/auth.service';
@@ -19,7 +20,9 @@ import { UsersModule } from '../users/users.module';
         if (!secret) throw new Error('JWT_SECRET não definido no .env');
 
         // usa string simples (7d, 1h, 15m etc)
-        const expiresIn = config.get<string>('JWT_EXPIRES_IN') ?? '7d';
+        const expiresIn =
+          (config.get<string>('JWT_EXPIRES_IN') as SignOptions['expiresIn']) ??
+          '7d';
 
         return {
           secret,
