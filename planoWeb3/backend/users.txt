@@ -1,0 +1,1 @@
+[{"id":"af8f2932-3990-424a-8a64-a3a66e685892","name":"Braga","email":"braga@plano.dev","isActive":true,"createdAt":"2026-03-05T22:02:30.289Z","updatedAt":"2026-03-05T22:02:30.289Z"},{"id":"9a885495-787c-4cca-8c2a-ab3e710d9427","name":"Cowboy","email":"anon@protonmail.com","isActive":true,"createdAt":"2026-03-07T18:55:09.991Z","updatedAt":"2026-03-07T18:55:09.991Z"}]

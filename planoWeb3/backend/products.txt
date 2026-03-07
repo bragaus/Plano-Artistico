@@ -1,0 +1,1 @@
+[{"id":"370d6d16-df00-4b06-9fc3-5ad84daefc28","title":"Beat Nebulosa Vol. 1","description":"Beat exclusivo, drop limitado.","type":"DIGITAL","category":"BEAT","priceAmount":"1500000000000000","priceCurrency":"ETH","stock":null,"isActive":true,"createdAt":"2026-03-07T15:12:24.299Z","updatedAt":"2026-03-07T15:12:24.299Z"}]
