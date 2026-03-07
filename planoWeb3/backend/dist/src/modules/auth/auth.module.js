@@ -10,24 +10,27 @@ exports.AuthModule = void 0;
 const common_1 = require("@nestjs/common");
 const jwt_1 = require("@nestjs/jwt");
 const config_1 = require("@nestjs/config");
-const auth_module_1 = require("./modules/auth/auth.module");
-Object.defineProperty(exports, "AuthModule", { enumerable: true, get: function () { return auth_module_1.AuthModule; } });
+const passport_1 = require("@nestjs/passport");
+const auth_controller_1 = require("./auth.controller");
+const auth_service_1 = require("./auth.service");
+const users_module_1 = require("../users/users.module");
+const jwt_strategy_1 = require("./jwt.strategy");
 let AuthModule = class AuthModule {
 };
 exports.AuthModule = AuthModule;
-exports.AuthModule = auth_module_1.AuthModule = __decorate([
+exports.AuthModule = AuthModule = __decorate([
     (0, common_1.Module)({
         imports: [
             config_1.ConfigModule,
+            users_module_1.UsersModule,
+            passport_1.PassportModule,
             jwt_1.JwtModule.registerAsync({
-                imports: [config_1.ConfigModule, auth_module_1.AuthModule],
                 inject: [config_1.ConfigService],
                 useFactory: (config) => {
                     const secret = config.get('JWT_SECRET');
-                    if (!secret) {
+                    if (!secret)
                         throw new Error('JWT_SECRET não definido no .env');
-                    }
-                    const expiresIn = config.get('JWT_EXPIRES_IN') ?? '1h';
+                    const expiresIn = Number(config.get('JWT_EXPIRES_IN') ?? 604800);
                     return {
                         secret,
                         signOptions: { expiresIn },
@@ -35,6 +38,9 @@ exports.AuthModule = auth_module_1.AuthModule = __decorate([
                 },
             }),
         ],
+        controllers: [auth_controller_1.AuthController],
+        providers: [auth_service_1.AuthService, jwt_strategy_1.JwtStrategy],
+        exports: [jwt_1.JwtModule],
     })
-], auth_module_1.AuthModule);
+], AuthModule);
 //# sourceMappingURL=auth.module.js.map

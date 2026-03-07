@@ -2,11 +2,12 @@ import { Module } from '@nestjs/common';
 import { JwtModule, JwtModuleOptions } from '@nestjs/jwt';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { PassportModule } from '@nestjs/passport';
-import { type SignOptions } from 'jsonwebtoken';
 
-import { AuthController } from '../auth/auth.controller';
-import { AuthService } from '../auth/auth.service';
+import { AuthController } from './auth.controller';
+import { AuthService } from './auth.service';
 import { UsersModule } from '../users/users.module';
+
+import { JwtStrategy } from './jwt.strategy';
 
 @Module({
   imports: [
@@ -19,10 +20,8 @@ import { UsersModule } from '../users/users.module';
         const secret = config.get<string>('JWT_SECRET');
         if (!secret) throw new Error('JWT_SECRET não definido no .env');
 
-        // usa string simples (7d, 1h, 15m etc)
-        const expiresIn =
-          (config.get<string>('JWT_EXPIRES_IN') as SignOptions['expiresIn']) ??
-          '7d';
+        // você decidiu segundos (ex: 604800) — isso evita briga de tipos
+        const expiresIn = Number(config.get<string>('JWT_EXPIRES_IN') ?? 604800);
 
         return {
           secret,
@@ -32,7 +31,7 @@ import { UsersModule } from '../users/users.module';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService],
+  providers: [AuthService, JwtStrategy],
   exports: [JwtModule],
 })
 export class AuthModule {}
